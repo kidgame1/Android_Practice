@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">C5practice3</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="Education">
+        <item>博士</item>
+        <item>碩士</item>
+        <item>大學</item>
+        <item>高中</item>
+    </string-array>
+</resources>
