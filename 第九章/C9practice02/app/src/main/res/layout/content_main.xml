@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ehappy.c9practice02.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtnumA"
+        android:text="A = "
+        android:textColor="#0000FF"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtnumA"
+        android:layout_toRightOf="@id/txtnumA"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtnumB"
+        android:layout_below="@id/txtnumA"
+        android:layout_marginTop="20dp"
+        android:text="B = "
+        android:textColor="#0000FF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtnumB"
+        android:layout_below="@id/edtnumA"
+        android:layout_toRightOf="@id/txtnumB"
+        android:textSize="20sp"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPage2"
+        android:layout_below="@id/txtnumB"
+        android:layout_marginTop="20dp"
+        android:text="開啟另一頁面顯示兩數之和" />
+</RelativeLayout>
