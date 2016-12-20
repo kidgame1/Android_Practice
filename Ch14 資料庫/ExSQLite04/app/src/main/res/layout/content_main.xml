@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ehappy.exsqlite04.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    </LinearLayout>
+
+    <TableLayout android:layout_width="match_parent">
+        <TableRow android:gravity="center">
+            <Button android:id="@+id/btnAppend" android:text="新增" />
+            <Button android:id="@+id/btnEdit" android:text="修改" />
+            <Button android:id="@+id/btnDelete" android:text="刪除" />
+            <Button android:id="@+id/btnClear" android:text="清除" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:layout_weight="1"
+                android:text="名稱"
+                android:layout_gravity="center"
+                android:textColor="#0000FF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_weight="4"
+                android:id="@+id/edtName"
+                android:textColor="#0000FF"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="價格"
+                android:textColor="#0000FF"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_weight="3"
+                android:id="@+id/edtPrice"
+                android:textColor="#0000FF"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TableRow>
+        <ListView
+            android:layout_weight="1"
+            android:id="@+id/ListView01" />
+    </TableRow>
+</TableLayout>
